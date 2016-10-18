@@ -164,8 +164,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libwapi.so:system/lib/libwapi.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
     $(LOCAL_PATH)/proprietary/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    $(LOCAL_PATH)/proprietary/system/bin/logwrapper:system/bin/logwrapper \
-    $(LOCAL_PATH)/proprietary/system/bin/ipod:system/bin/ipod \
+    $(LOCAL_PATH)/proprietary/system/bin/factory:system/bin/factory \
     $(LOCAL_PATH)/proprietary/system/lib/libcurl.so:system/lib/libcurl.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmnl.so:system/lib/libmnl.so \
     $(LOCAL_PATH)/proprietary/system/xbin/mnld:system/xbin/mnld \
