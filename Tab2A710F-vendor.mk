@@ -1,9 +1,18 @@
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/Tab2A710F/proprietary/bin,system/bin)
+# Copyright (C) 2013 The CyanogenMod Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/Tab2A710F/proprietary/etc,system/etc)
+# Pick up overlay for features that depend on non-open-source files
+DEVICE_PACKAGE_OVERLAYS += vendor/lenovo/Tab2A710F/overlay
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/Tab2A710F/proprietary/lib,system/lib)
-
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/Tab2A710F/proprietary/xbin,system/xbin)
-
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/lenovo/Tab2A710F/proprietary/vendor,system/vendor)
+$(call inherit-product, vendor/lenovo/Tab2A710F/Tab2A710F-vendor-blobs.mk)
