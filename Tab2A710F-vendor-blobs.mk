@@ -138,6 +138,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libvp8dec_sa.ca7.so:system/lib/libvp8dec_sa.ca7.so \
     $(LOCAL_PATH)/proprietary/system/lib/libvp9dec_sa.ca7.so:system/lib/libvp9dec_sa.ca7.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmp2dec_sa.ca7.so:system/lib/libmp2dec_sa.ca7.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     $(LOCAL_PATH)/proprietary/system/bin/aee_core_forwarder:system/bin/aee_core_forwarder \
     $(LOCAL_PATH)/proprietary/system/bin/aee:system/bin/aee \
     $(LOCAL_PATH)/proprietary/system/bin/aee_archive:system/bin/aee_archive \
@@ -147,6 +149,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/sbchk:system/bin/sbchk \
     $(LOCAL_PATH)/proprietary/system/bin/guiext-server:system/bin/guiext-server \
     $(LOCAL_PATH)/proprietary/system/bin/em_svr:system/bin/em_svr \
+    $(LOCAL_PATH)/proprietary/system/lib/libem_support_jni.so:system/lib/libem_support_jni.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmtk_mmutils.so:system/lib/libmtk_mmutils.so \
     $(LOCAL_PATH)/proprietary/system/lib/libaudiodcrflt.so:system/lib/libaudiodcrflt.so \
     $(LOCAL_PATH)/proprietary/system/lib/libstagefright_memutil.so:system/lib/libstagefright_memutil.so \
@@ -160,11 +163,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libMtkOmxGsmDec.so:system/lib/libMtkOmxGsmDec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libMtkOmxAdpcmDec.so:system/lib/libMtkOmxAdpcmDec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libdrmmtkwhitelist.so:system/lib/libdrmmtkwhitelist.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libbluetoothdrv.so:system/lib/libbluetoothdrv.so \
+    $(LOCAL_PATH)/proprietary/system/bin/MtkCodecService:system/bin/MtkCodecService \
+    $(LOCAL_PATH)/proprietary/system/lib/libBnMtkCodec.so:system/lib/libBnMtkCodec.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmpodecoder.so:system/lib/libmpodecoder.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libsbccodec.so:system/lib/libsbccodec.so \
     $(LOCAL_PATH)/proprietary/system/lib/libwapi.so:system/lib/libwapi.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
-    $(LOCAL_PATH)/proprietary/system/bin/factory:system/bin/factory \
+    $(LOCAL_PATH)/proprietary/system/lib/libbluetoothdrv.so:system/lib/libbluetoothdrv.so \
     $(LOCAL_PATH)/proprietary/system/lib/libcurl.so:system/lib/libcurl.so \
     $(LOCAL_PATH)/proprietary/system/lib/libmnl.so:system/lib/libmnl.so \
     $(LOCAL_PATH)/proprietary/system/xbin/mnld:system/xbin/mnld \
@@ -179,7 +184,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:system/vendor/lib/mediadrm/libmockdrmcryptoplugin.so \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libui_ext.so:system/lib/libui_ext.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libperfservicenative.so:system/lib/libperfservicenative.so \
     $(LOCAL_PATH)/proprietary/system/lib/libshowlogo.so:system/lib/libshowlogo.so \
+    $(LOCAL_PATH)/proprietary/system/bin/factory:system/bin/factory \
+    $(LOCAL_PATH)/proprietary/system/etc/factory.ini:system/etc/factory.ini \
+    $(LOCAL_PATH)/proprietary/system/bin/ipod:system/bin/ipod \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/ROMv2_patch_1_0_hdr.bin:system/etc/firmware/ROMv2_patch_1_0_hdr.bin \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/ROMv2_patch_1_1_hdr.bin:system/etc/firmware/ROMv2_patch_1_1_hdr.bin \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/WIFI_RAM_CODE_8127:system/etc/firmware/WIFI_RAM_CODE_8127 \
@@ -195,19 +206,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/mt6627/mt6627_fm_v4_patch.bin:system/etc/firmware/mt6627/mt6627_fm_v4_patch.bin \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/mt6627/mt6627_fm_v5_coeff.bin:system/etc/firmware/mt6627/mt6627_fm_v5_coeff.bin \
     $(LOCAL_PATH)/proprietary/system/etc/firmware/mt6627/mt6627_fm_v5_patch.bin:system/etc/firmware/mt6627/mt6627_fm_v5_patch.bin \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    $(LOCAL_PATH)/proprietary/system/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/proprietary/system/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
     $(LOCAL_PATH)/proprietary/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg \
-    $(LOCAL_PATH)/proprietary/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/proprietary/system/etc/mtklog-config.prop:system/etc/mtklog-config.prop \
-    $(LOCAL_PATH)/proprietary/system/etc/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
-    $(LOCAL_PATH)/proprietary/system/etc/bluetooth/btconfig.xml:system/etc/bluetooth/btconfig.xml \
-    $(LOCAL_PATH)/proprietary/system/etc/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
-    $(LOCAL_PATH)/proprietary/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-    $(LOCAL_PATH)/proprietary/system/vendor/etc/dolby/ds1-default.xml:system/vendor/etc/dolby/ds1-default.xml \
     $(LOCAL_PATH)/proprietary/system/etc/.tp/thermal.conf:system/etc/.tp/thermal.conf \
-    $(LOCAL_PATH)/proprietary/system/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf \
-    $(LOCAL_PATH)/proprietary/system/etc/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
-    $(LOCAL_PATH)/proprietary/system/etc/bluetooth/bt_stack.conf:system/etc/bluetooth/bt_stack.conf
+    $(LOCAL_PATH)/proprietary/system/etc/.tp/thermal.off.conf:system/etc/.tp/thermal.off.conf
