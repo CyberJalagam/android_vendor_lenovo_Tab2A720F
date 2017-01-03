@@ -187,6 +187,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     $(LOCAL_PATH)/proprietary/system/lib/libui_ext.so:system/lib/libui_ext.so \
     $(LOCAL_PATH)/proprietary/system/lib/libperfservicenative.so:system/lib/libperfservicenative.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmtcloader.so:system/lib/libmtcloader.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libmemtrack.so:system/lib/libmemtrack.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
     $(LOCAL_PATH)/proprietary/system/lib/libshowlogo.so:system/lib/libshowlogo.so \
     $(LOCAL_PATH)/proprietary/system/bin/factory:system/bin/factory \
     $(LOCAL_PATH)/proprietary/system/etc/factory.ini:system/etc/factory.ini \
