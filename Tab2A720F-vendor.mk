@@ -13,6 +13,6 @@
 # limitations under the License.
 
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS += vendor/lenovo/Tab2A710F/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/lenovo/Tab2A720F/overlay
 
-$(call inherit-product, vendor/lenovo/Tab2A710F/Tab2A710F-vendor-blobs.mk)
+$(call inherit-product, vendor/lenovo/Tab2A720F/Tab2A720F-vendor-blobs.mk)

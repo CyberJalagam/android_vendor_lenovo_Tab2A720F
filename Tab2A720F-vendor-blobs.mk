@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/lenovo/Tab2A710F
+LOCAL_PATH := vendor/lenovo/Tab2A720F
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/bin/6620_launcher:system/bin/6620_launcher \
